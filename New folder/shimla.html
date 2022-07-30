@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Pacifico&display=swap&family=Ruslan+Display&family=Satisfy&display=swap&family=Yanone+Kaffeesatz:wght@300&display=swap&family=Source+Sans+Pro:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="LogoTransparent.png" type="image/png">
+
+    <script src="https://kit.fontawesome.com/b5d0e07930.js" crossorigin="anonymous"></script>
+    <title>Shimla</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        :root {
+            --navbar-height: 59px;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        #navbar {
+
+            position: fixed;
+            width: 100%;
+            height: 7%;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.199);
+
+
+        }
+
+        #navbar ul {
+            display: flex;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.2;
+
+
+        }
+
+        #navbar ul li {
+            color: rgb(238, 227, 227);
+            list-style: none;
+            font-size: 1.3rem;
+
+
+
+        }
+
+        #navbar ul li a {
+            color: rgb(238, 227, 227);
+            display: block;
+            padding: 3px 25px;
+            border-radius: 20px;
+            font-family: 'Style Script', cursive;
+            text-decoration: none;
+
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: rgb(238, 227, 227);
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 2px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+            font-size: 24px;
+            color: black;
+            font-family: 'Dancing Script', cursive;
+
+        }
+
+        /* #home h3 {
+            position: relative;
+            top: 250px;
+        } */
+
+
+
+        #home::before {
+            content: "";
+            background: url(shimla\ b.jpg)no-repeat center center/cover;
+            position: absolute;
+            height: 115%;
+            width: 100%;
+            z-index: -1;
+            background-position: 0px -50px;
+
+
+        }
+
+        #home h1 {
+            color: black;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            /* position: relative;
+            top: 240px; */
+        }
+
+
+        .h-primary {
+            font-size: 5rem;
+        }
+
+        .section1 {
+            font-family: 'Style Script', cursive;
+            margin: 140px;
+            font-size: 1.2em;
+            position: relative;
+            top: 3rem;
+        }
+
+        #s1 {
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        #s2 {
+            padding: 12px 2px;
+        }
+
+        #grid-heading {
+            font-size: 3rem;
+            width: 75%;
+            margin: 1rem auto;
+            position: relative;
+            top: 1rem;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        span {
+            position: relative;
+            top: 1rem;
+            left: 10.7rem;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        #container2 {
+            display: grid;
+            grid-gap: 1rem;
+            /* border: 2px solid; */
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 1rem;
+            width: 75%;
+            margin: 2rem auto;
+            position: relative;
+            top: 1rem;
+        }
+
+        #container2 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #container2 .box {
+            /* border: 1px solid; */
+            transition: all 0.5s ease-in-out;
+            /* transform: all 1s ease-in-out; */
+            height: 100%;
+        }
+
+        #container2 .box:hover {
+            transform: scale(1.03);
+            box-shadow: -5px 5px 10px 10px rgb(240, 211, 211);
+            ;
+        }
+
+        #container2 .box img {
+            width: 100%;
+            height: 250px;
+        }
+
+        #container2 .box h3 {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5rem;
+            padding: 6px;
+
+        }
+
+        #container2 .box p {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 1rem;
+            padding: 6px;
+        }
+
+        .end {
+            text-align: center;
+
+            padding: 100px 50px;
+
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 80px;
+            font-weight: 600;
+        }
+
+        .footer p {
+            margin-left: 120px;
+            margin-right: 120px;
+            font-weight: normal;
+            font-size: 13px;
+            font-family: 'Poiret One', cursive;
+            margin-bottom: 5px;
+        }
+
+        .icons {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+
+        <ul>
+            <li class="item"><a href="../index.html">TravelWithUs</a></li>
+            <li class="item"><a href="#h">Home</a></li>
+            <li class="item"><a href="#explore">Shimla</a></li>
+            <li class="item"><a href="#top">Places To Visit</a></li>
+            <li class="item"><a href="#About">About Us</a></li>
+        </ul>
+    </nav>
+    <a name="h"></a>
+    <section id="home">
+
+        <h1 class="h-primary">Welcome to Shimla</h1>
+        <p>
+        <h3>Top 9 places to visit in Shimla</h3>
+        </p>
+
+    </section>
+    <a name="explore"></a>
+    <div class="section1">
+        <h1 id="s1">Explore Shimla</h1>
+        <p id="s2">Shimla derives its name from Shyamala Devi, an incarnation of the goddess Kali, whose temple existed in the dense forest covering the Jakhu Hill in the early 19th century. Shimla is the capital of Himachal Pradesh and was also the summer capital in pre-Independence India. Covering an area of 25 sq km at a height of 7,238 ft, Shimla is surrounded by pine, deodar and oak forests. Its well developed amenities, easy reach and various tourist attractions make it one of India’s most popular hill stations.Shimla is home to a number of buildings that are styled in the Tudorbethan and neo-Gothic architectures dating from the colonial era, as well as multiple temples and churches.</p>
+    </div>
+    <a name="top"></a>
+    <h3 id="grid-heading">Top Sights</h4>
+        <span> (click for web-search) </a></span>
+        <div id="container2">
+            <a href="https://www.google.com/search?q=Mall%20Road&stick=H4sIAAAAAAAAAONgFuLUz9U3MCowzq1UAjNTTIpzqrQUs5Ot9HPykxNLMvPz4AyrxJKSosRkELMYADFehAU7AAAA&ved=0CBkQ4mhqFwoTCKCBp7HChfICFQAAAAAdAAAAABAS&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DMall%252BRoad%2526skpm%253D/m/0d4slz%2526t%253Dd"
+                target="_blank">
+                <div class="box" id="box-1">
+                    <img src="../cities\mallroad.jpg" alt="">
+                    <h3>Mall Road</h3>
+                    <!-- <p>Mall Road is the major hangout point and shopping centre in Shimla, the capital city of Himachal Pradesh, India. Constructed during British colonial rule, the Mall road is located a level below The Ridge.</p> -->
+                    <p>Location: Mall Rd, Shimla, Himachal Pradesh</p>
+                    <p>Timings: 09:00 am to 09:00 pm; every day </p>
+                    <p>Entry Fee: No entry fee</p>
+
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=The%20Ridge&stick=H4sIAAAAAAAAAONgFuLUz9U3MCowzq1UAjNTDDMyKrQUs5Ot9HPykxNLMvPz4AyrxJKSosRkELMYADWNoHo7AAAA&ved=0CBkQ4mhqFwoTCNDwn9bJhfICFQAAAAAdAAAAABAH&hl=en-IN&gl=in"
+                target="_blank">
+                <div class="box" id="box-2">
+                    <img src="../cities\theridge.jpg" alt="">
+                    <h3>The Ridge</h3>
+                    <p>Location: near Mall road, Shimla</p>
+                    <p>Visit Timings: 08:00 am to 06:00 pm; every day</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=Viceregal%20Lodge%20%26%20Botanical%20Gardens&stick=H4sIAAAAAAAAAONgFuLUz9U3MCowzq1UAjOTKuIzCrUUs5Ot9HPykxNLMvPz4AyrxJKSosRkELMYAD6Hf0A7AAAA&ved=0CB4Q4mhqFwoTCNDwn9bJhfICFQAAAAAdAAAAABAa&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DViceregal%252BLodge%252B%252526%252BBotanical%252BGardens%2526skpm%253D/m/0bx_hq%2526t%253Dd"
+            target="_blank">
+                <div class="box" id="box-3">
+                    <img src="../cities\viceregal.jpg" alt="">
+                    <h3>Viceregal Lodge & Botanical Gardens</h3>
+                    <!-- <p>It is located on the Observatory Hills of Shimla, Himachal Pradesh, India. It was formerly the residence of the British Viceroy of India. It houses some of the most ancient articles and photographs going back to the times of the British rule in India.</p> -->
+                    <p>Location: Rashtrapati Nivas Chaura Maidan Road, Near, Observatory Hill, Boileauganj, Shimla</p>
+                    <p>Timings: 10:30 am to 05:00 pm; Monday closed</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=Christ%20Church%2C%20Shimla%20Shimla&stick=H4sIAAAAAAAAAONgFuLUz9U3MCowzq1U4gIxTQuSk5IMtBSzk630c_KTE0sy8_PgDKvEkpKixGQQsxgAQkam4jwAAAA&ved=0CBwQ4mhqFwoTCNDwn9bJhfICFQAAAAAdAAAAABAj&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DChrist%252BChurch,%252BShimla%252BShimla%2526skpm%253D/m/05pcbb0%2526t%253Dd"
+                target="_blank">
+                <div class="box" id="box-4">
+                    <img src="../cities\church.jpg" alt="">
+                    <h3>Christ Church, Shimla</h3>
+                    <p>Location: Ridge To US Club, The Mall, Shimla</p>
+                    <p>Timings: 08:00 am to 6:00 pm; every day/p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=Shri%20Hanuman%20Mandir%20Jakhoo&stick=H4sIAAAAAAAAAONgFuLUz9U3MCowzq1U4gIzzQrScsy0FLOTrfRz8pMTSzLz8-AMq8SSkqLEZBCzGABot209PAAAAA&ved=0CB4Q4mhqFwoTCNDwn9bJhfICFQAAAAAdAAAAABAr&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DShri%252BHanuman%252BMandir%252BJakhoo%2526skpm%253D/m/026pfl6%2526t%253Dd"
+                target="_blank">
+                <div class="box" id="box-5">
+                    <img src="../cities\mandir.jpg" alt="">
+                    <h3>Shri Hanuman Mandir Jakhoo</h3>
+                    <p>Location: Jakhu Temple Park, Jakhu, Shimla</p>
+                    <p>Timings: Open 24hrs</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=Kali%20Bari%20Temple%2C%20Shimla&stick=H4sIAAAAAAAAAONgFuLUz9U3MCowzq1U4tZP1zcsSU_OLjBJ01LMTrbSz8lPTizJzM-DM6wSS0qKEpNBzGIA9EymBj0AAAA&ved=0CCQQ4mhqFwoTCNDwn9bJhfICFQAAAAAdAAAAABA0&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DKali%252BBari%252BTemple,%252BShimla%2526skpm%253D/g/1tgckp4f%2526t%253Dd"
+                target="_blank">
+                <div class="box" id="box-6">
+                    <img src="../cities\kalitemple.jpg" alt="">
+                    <h3>Kali Bari Temple, Shimla</h3>
+                    <p>Location: Mall Rd, Kali Bari, Shimla</p>
+                    <p>Timings: Open 24hrs</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=Jakhu%20Hill&stick=H4sIAAAAAAAAAONgFuLUz9U3MCowzq1U4tZP1zcsSSk3SzOp0FLMTrbSz8lPTizJzM-DM6wSS0qKEpNBzGIA0wuh_D0AAAA&ved=0CCUQ4mhqFwoTCNDwn9bJhfICFQAAAAAdAAAAABA8&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DJakhu%252BHill%2526skpm%253D/g/1tdw6f4x%2526t%253Dd"
+                target="_blank">
+                <div class="box" id="box-7">
+                    <img src="../cities\JakhooHill.jpg" alt="">
+                    <h3>Jakhu Hill</h3>
+                    <p>Location: Jakhu Hill, Shimla's highest peak</p>
+                    <p>Timings: 6am - 11am and 4pm - 8pm; everyday</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=State%20Museum&stick=H4sIAAAAAAAAAONgFuLUz9U3MCowzq1U4tFP1zc0yiquTDFMMdFSzE620s_JT04syczPgzOsEktKihKTQcxiAIdHGS8-AAAA&ved=0CBkQ4mhqGAoTCNDwn9bJhfICFQAAAAAdAAAAABCZAQ&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DState%252BMuseum%2526skpm%253D/g/12jsyd1d4%2526t%253Dd"
+                target="_blank">
+                <div class="box" id="box-8">
+                    <img src="../cities\stateMuseum.jpg" alt="">
+                    <h3>State Museum</h3>
+                    <p>Location: Chaura Maidan Rd, Chaura Maidan, Shimla</p>
+                    <p>Timings: 10:00 am to 5:00 pm; Monday closed</p>
+                    <p>Entry Fee:
+                        ₹ 10 for Indians /
+                        ₹ 50 for Foreigners</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=Jakhu%20Ropeway%20Shimla&stick=H4sIAAAAAAAAAONgFuLUz9U3MCowzq1U4tVP1zc0TDc3TEsrTKvQUsxOttLPyU9OLMnMz4MzrBJLSooSk0HMYgABPj_LPwAAAA&ved=0CCcQ4mhqGAoTCNDwn9bJhfICFQAAAAAdAAAAABCfAQ&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DJakhu%252BRopeway%252BShimla%2526skpm%253D/g/11g71ffqfx%2526t%253Dd"
+                target="_blank">
+                <div class="box" id="box-9">
+                    <img src="../cities\jakhuRope.jpg" alt="">
+                    <h3>Jakhu Ropeway Shimla</h3>
+                    <p>Location: The Ridge, Ridge To US Club, Bemloi, Shimla</p>
+                    <p>Timings: 09:30 am to 06:30 pm; every day</p>
+                    <p>Entry Fee: ₹ 200 for Children /
+                        ₹ 250 for Adults</p>
+                </div>
+            </a>
+                </div>
+            </a>
+        </div>
+        <section class="footer">
+
+
+            <a name="About">
+                <h4>About Us</h4>
+            </a>
+            <p>We are a leading online travel company in India providing a 'best in class' customer experience with the goal to be 'India's Travel Planner'. Through our website, www.travelwithus.com, our mobile applications and our other associated platforms, leisure and business travelers can explore, research, compare prices and book a wide range of services catering to their travel needs.</p>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" target="_blank"> <i class="fab fa-instagram"></i></a>
+
+
+            </div>
+        </section>
+</body>
+
+</html>

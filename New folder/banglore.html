@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Pacifico&display=swap&family=Ruslan+Display&family=Satisfy&display=swap&family=Yanone+Kaffeesatz:wght@300&display=swap&family=Source+Sans+Pro:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="LogoTransparent.png" type="image/png">
+
+    <script src="https://kit.fontawesome.com/b5d0e07930.js" crossorigin="anonymous"></script>
+    <title>Bangalore</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        :root {
+            --navbar-height: 59px;
+        }
+
+        #navbar {
+            scroll-behavior: smooth;
+            display: flex;
+            align-items: center;
+        }
+
+        #navbar {
+
+            position: fixed;
+            width: 100%;
+            height: 7%;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.199);
+
+
+        }
+
+        #navbar ul {
+            display: flex;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.2;
+
+
+        }
+
+        #navbar ul li {
+            color: rgb(238, 227, 227);
+            list-style: none;
+            font-size: 1.3rem;
+
+
+
+        }
+
+        #navbar ul li a {
+            color: rgb(238, 227, 227);
+            display: block;
+            padding: 3px 25px;
+            border-radius: 20px;
+            font-family: 'Style Script', cursive;
+            text-decoration: none;
+
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: rgb(238, 227, 227);
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 2px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+            font-size: 24px;
+            color: rgb(238, 227, 227);
+            font-family: 'Dancing Script', cursive;
+
+        }
+
+        #home h3 {
+            position: relative;
+            top: 250px;
+        }
+
+
+
+        #home::before {
+            content: "";
+            background: url(bangalore\ b.jpg)no-repeat center center/cover;
+            position: absolute;
+            height: 115%;
+            width: 100%;
+            z-index: -1;
+            background-position: 0px -50px;
+
+
+        }
+
+        #home h1 {
+            color: rgb(238, 227, 227);
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            position: relative;
+            top: 240px;
+        }
+
+
+        .h-primary {
+            font-size: 5rem;
+        }
+
+        .section1 {
+            font-family: 'Style Script', cursive;
+            margin: 140px;
+            font-size: 1.2em;
+            position: relative;
+            top: 3rem;
+        }
+
+        #s1 {
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        #s2 {
+            padding: 12px 2px;
+        }
+
+        #grid-heading {
+            font-size: 3rem;
+            width: 75%;
+            margin: 1rem auto;
+            position: relative;
+            top: 1rem;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        span {
+            position: relative;
+            top: 1rem;
+            left: 10.7rem;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        #container2 {
+            display: grid;
+            grid-gap: 1rem;
+            /* border: 2px solid; */
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 1rem;
+            width: 75%;
+            margin: 2rem auto;
+            position: relative;
+            top: 1rem;
+        }
+
+        #container2 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #container2 .box {
+            /* border: 1px solid; */
+            transition: all 0.5s ease-in-out;
+            /* transform: all 1s ease-in-out; */
+            height: 100%;
+        }
+
+        #container2 .box:hover {
+            transform: scale(1.03);
+            box-shadow: -5px 5px 10px 10px rgb(240, 211, 211);
+            ;
+        }
+
+        #container2 .box img {
+            width: 100%;
+        }
+
+        #container2 .box h3 {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5rem;
+            padding: 6px;
+
+        }
+
+        #container2 .box p {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 1rem;
+            padding: 6px;
+        }
+
+        .end {
+            text-align: center;
+
+            padding: 100px 50px;
+
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 80px;
+            font-weight: 600;
+        }
+
+        .footer p {
+            margin-left: 120px;
+            margin-right: 120px;
+            font-weight: normal;
+            font-size: 13px;
+            font-family: 'Poiret One', cursive;
+            margin-bottom: 5px;
+        }
+
+        .icons {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+
+        <ul>
+            <li class="item"><a href="../index.html">TravelWithUs</a></li>
+            <li class="item"><a href="#h">Home</a></li>
+            <li class="item"><a href="#explore">Bangalore</a></li>
+            <li class="item"><a href="#top">Places To Visit</a></li>
+            <li class="item"><a href="#About">About Us</a></li>
+        </ul>
+    </nav>
+    <a name="h"></a>
+    <section id="home">
+
+        <h1 class="h-primary">Welcome to Bangalore</h1>
+        <p>
+        <h3>Top 9 places to visit in Bangalore</h3>
+        </p>
+
+    </section>
+    <a name="explore"></a>
+    <div class="section1">
+        <h1 id="s1">Explore Bangalore</h1>
+        <p id="s2">A tour to the city of Bangalore will show you the relevance of each of its name! Bangalore city tour from Bangalore Tourism, a division of Holidays DNA presents you with a wide range of entertaining choices which range from lively nightlife to fun filled amusement parks; from beautiful lakes to glittery buildings and captivating monuments and temples. Often called as the air conditioned city, Bangalore boasts of a pleasant weather throughout the year and thus you can plan Bangalore tour at any time of the year. Be in summer or winter, you can visit this city whenever you want without having to worry about the climatic conditions.</p>
+    </div>
+    <a name="top"></a>
+    <h3 id="grid-heading">Top Sights</h4>
+        <span> (click for web-search) </a></span>
+        <div id="container2">
+            <a href="https://bangaloretourism.in/bangalore-palace" target="_blank">
+                <div class="box" id="box-1">
+                    <img src="../cities\th.jpg" alt="" height="239.3px">
+                    <h3> Banglore Fort </h3>
+                    <p>Location:8th Main Road, Bengaluru</p>
+                    <p>Timings: 6:00 am to 10:00 pm; everyday </p>
+                    <p>Entry Fee: No entry fee</p>
+
+                </div>
+            </a>
+            <a href="https://bangaloretourism.in/bannerghatta-national-park" target="_blank">
+                <div class="box" id="box-2">
+                    <img src="../cities\BNP.jpg" alt="" height="238.2px">
+                    <h3>Bannerghatta National Park</h3>
+                    <p>Location:Bannerghatta, Bengaluru,,</p>
+                    <p>Visit Timings: 24hrs;</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://traveltriangle.com/karnataka-tourism/bangalore/places-to-visit/cubbon-park" target="_blank">
+                <div class="box" id="box-3">
+                    <img src="../cities\th(1).jpg" alt="" height="238.2PX">
+                    <h3> Cubbor Park </h3>
+                    <p>Location:  MG Road, Bengaluru, Karnataka </p>
+                    <p>Timings: Mon: closed ;
+                        Tue-Sun: 9:30am to 5:00pm
+                    </p>
+
+                </div>
+            </a>
+            <a href="https://traveltriangle.com/karnataka-tourism/bangalore/places-to-visit/lalbagh" target="_blank">
+                <div class="box" id="box-4">
+                    <img src="../cities\th(2).jpg" alt="" height="238.2px">
+                    <h3>Lalbagh</h3>
+                    <p>Location: Lalbagh, Bengalore, Karnataka</p>
+                    <p>Timings: 06:00 am to 6:00pm; every day</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.tripadvisor.in/Attraction_Review-g297628-d1213155-Reviews-Innovative_Film_City-Bengaluru_Bangalore_District_Karnataka.html" target="_blank">
+                <div class="box" id="box-5">
+                    <img src="../cities\th(3).jpg" alt="" height="238.2px">
+                    <h3>Inovative Film city</h3>
+                    <p>Location:: 24 &amp; 26, Kiadb Estates, Bidadi, Bengaluru, Karnataka ,</p>
+                    <p>Timings: 12:00 am to 11:59 pm; every day</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.karnatakatourism.org/tour-item/iskcon-sri-radha-krishna-temple/" target="_blank">
+                <div class="box" id="box-6">
+                    <img src="../cities\th(4).jpg" alt="" height="238.2px">
+                    <h3>Iskcon Templel</h3>
+                    <p>Location:  West of Chord Road, Bengaluru, Karnataka</p>
+                    <p>Timings: 12:00 am to 11:59 pm; every day </p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.tripadvisor.in/Attraction_Review-g297628-d2587750-Reviews-Ulsoor_Lake-Bengaluru_Bangalore_District_Karnataka.html" target="_blank">
+                <div class="box" id="box-7">
+                    <img src="../cities\th(5).jpg" alt="" height="238.2px">
+                    <h3>Ulsoor Lake</h3>
+                    <p>Location: Ulsoor, Bengaluru, Karnataka</p>
+                    <p>Timings: 12:00 am to 11:59 pm; every day</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://traveltriangle.com/karnataka-tourism/bangalore/places-to-visit/shivaganga-hills" target="_blank">
+                <div class="box" id="box-8">
+                    <img src="../cities\th(6).jpg" alt="" height="238.2px">
+                    <h3>Shiva Ganga Hills</h3>
+                    <p>Location: Dobbaspet, Bengaluru, Karnataka </p>
+                    <p>Timings: 24hrs;</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://traveltriangle.com/karnataka-tourism/bangalore/places-to-visit/lumbini-garden/entry-fees" target="_blank">
+                <div class="box" id="box-8">
+                    <img src="../cities\th(7).jpg" alt="" height="238.2px">
+                    <h3> Lumbini Garden </h3>
+                    <p>Location: Nagawara Lake, Ring Road, Hebbal, Bengaluru, Karnataka</p>
+                    <p>Timings: 09:00 am to 06:30 pm (Mon-Sat); 10:30 am to 06:30 pm</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+        </div>
+        <section class="footer">
+
+
+            <a name="About">
+                <h4>About Us</h4>
+            </a>
+            <p>We are a leading online travel company in India providing a 'best in class' customer experience with the goal to be 'India's Travel Planner'. Through our website, www.travelwithus.com, our mobile applications and our other associated platforms, leisure and business travelers can explore, research, compare prices and book a wide range of services catering to their travel needs. </p>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" target="_blank"> <i class="fab fa-instagram"></i></a>
+
+
+            </div>
+        </section>
+</body>
+
+</html>

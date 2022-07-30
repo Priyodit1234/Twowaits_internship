@@ -1,0 +1,621 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding: 9px;
+    background-color: black;
+}
+#navbar ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+    margin: auto;
+    margin-top: 12px;
+
+}
+#navbar ul span{
+    margin: auto;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+#navbar ul a{
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    padding: 0px 36px;
+    color: #ffffff;
+}
+#navbar ul a:hover{
+    background-color: #ffffff;
+    border-radius: 20px;
+    color: #000000;
+}
+#container1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 34px;
+    left: 0px;
+    background: url('New folder\\island.jpg') no-repeat center center/cover;
+    z-index: -1;
+    height: 37rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#container1 h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    position: relative;
+    top: -4rem;
+}
+#container1 p{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+
+#search-bar{
+    position: relative;
+    top: 41rem;
+    width: 60%;
+    margin: auto;
+}
+
+input{
+    height: 2rem;
+    width: 18rem;
+}
+#container2{
+    position: relative;
+    top: 40rem;
+    height: 38rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#container2 h1{
+    
+    font-family: 'Pacifico', cursive;
+    font-size: 2.35rem;
+}
+#container2 p{
+    top: 27rem;
+    width: 76%;
+    text-align: center;
+    margin: 9px auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.35rem;
+}
+#destinations{
+    position: relative;
+    top: 32rem;
+    font-size: 3rem;
+    padding-top: 6rem;
+    height: 0rem;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+#container3{
+    position: relative;
+    top: 32rem;
+    height: 31rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 1rem;
+    width: 76%;
+    margin: auto;
+}
+#container3 a{
+    text-decoration: none;
+    color: black;
+}
+.box{
+    position: relative;
+    top: 6rem;
+    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.box:hover{
+    box-shadow: -5px 5px 10px 10px #cdedff;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.box .item{
+    padding: 1rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: justify;
+    
+}
+.box h4{
+    font-size: 2rem;
+    padding: 1rem;
+    font-family: 'Pacifico', cursive;
+}
+.box img{
+    width: 100%;
+}
+#contact{
+    position:relative;
+    top: 112rem;
+    /* bottom: 0px; */
+    width: 60%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+#insta{
+    width: 2.5rem;
+    position: relative;
+    top: 5px;
+    left: 22px;
+}
+#fb{
+    width: 4.5rem;
+}
+#twitter{
+    width: 3rem;
+}
+#linkedin{
+    width: 3rem;
+}
+#gmail{
+    width: 5rem;
+}
+#wapp{
+    width: 3rem;
+}
+
+#feedback{
+    position: relative;
+    top: 114rem;
+    width: 63%;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: auto;
+    padding: 28px;
+}
+#feedback p{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#feedback a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 25%;
+    margin: auto;
+    background: #050505;
+    color: white;
+    padding: 8px;
+    border-radius: 20px
+}
+#feedback a:hover{
+    background: #c9c9c9;
+    color: #000000;
+}
+
+@media (min-width:1000px) and (max-width:1226px) {
+    #contact{
+        top: 170rem;
+    }
+    #feedback{
+        top: 172rem;
+    }
+    
+}
+@media (min-width:811px) and (max-width:1000px) {
+    #navbar ul li{
+        font-size: 0.8rem;
+    
+    }
+    #navbar ul span{
+        font-size: 1.4rem;
+    }
+    #navbar ul a{
+        padding: 0px 22px;
+    }
+    #container1 h1{
+        font-size: 4rem;
+    }
+    #container2 h1{
+        font-size: 2.05rem;
+    }
+    #container2 p{
+        font-size: 1.15rem;
+    }
+    #contact{
+        top: 150rem;
+    }
+    #feedback{
+        top: 152rem;
+    }
+}
+@media (min-width:677px) and (max-width:811px) {
+    #navbar ul li{
+        font-size: 0.8rem;
+    }
+    #navbar ul span{
+        font-size: 1.4rem;
+    }
+    #navbar ul a{
+        padding: 0px 22px;
+    }
+    #container1 h1{
+        font-size: 4rem;
+    }
+    #destinations{
+        font-size: 2.4rem;
+    }
+    #container2 p{
+        font-size: 1.05rem;
+    }
+    #contact{
+        top: 390rem;
+    }
+    #feedback{
+        top: 392rem;
+    }
+    
+}
+
+@media (min-width:759px) and (max-width: 789px) {
+    #contact{
+        top: 380rem;
+    }
+    #feedback{
+        top: 382rem;
+    }
+    #feedback p{
+        font-size: 1.2rem;
+    }
+    #feedback a{
+        font-size: 1.2rem;
+    }
+}
+@media (min-width:711px) and (max-width: 758px) {
+    #contact{
+        top: 370rem;
+    }
+    #feedback{
+        top: 372rem;
+    }
+    #feedback p{
+        font-size: 1.2rem;
+    }
+    #feedback a{
+        font-size: 1.2rem;
+    }
+}
+@media (min-width:677px) and (max-width: 710px) {
+    #contact{
+        top: 360rem;
+    }
+    #feedback{
+        top: 362rem;
+    }
+    #feedback p{
+        font-size: 1.2rem;
+    }
+    #feedback a{
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:450px) and (max-width:676px) {
+    #navbar{
+        padding: 3px;
+    }
+    #navbar ul li{
+        font-size: 0.5rem;
+        margin-top: 4px;
+    }
+    #navbar ul span{
+        font-size: 0.8rem;
+        /* top: 0rem; */
+    }
+    #navbar ul a{
+        padding: 0px 12px;
+    }
+    #container1{
+        top: 29px;
+        height: 22rem;
+    }
+    #container1 h1{
+        font-size: 3rem;
+    }
+    #container2{
+        top: 22rem;
+        height: 19rem;
+    }
+    #container2 h1{
+        font-size: 1.55rem;
+    }
+    #container2 p{
+        font-size: 0.55rem;
+    }
+    #destinations{
+        font-size: 2rem;
+        top: 15rem;
+    }
+    .box{
+        top: -12rem;
+    }
+    .box .item{
+        font-size: 0.8rem;    
+    }
+    .box h4{
+        font-size: 1rem;
+    }
+    #contact{
+        top: 300rem;
+    }
+    #feedback{
+        top: 300rem;
+    }
+    #feedback p{
+        font-size: 1.2rem;
+    }
+    #insta{
+        width: 1.5rem;
+        position: relative;
+        top: 6px;
+        left: 26px;
+    }
+    #fb{
+        width: 3.2rem;
+        margin-top: 2px;
+    }
+    #twitter{
+        width: 2rem;
+        margin-top: 6px;
+    }
+    #linkedin{
+        margin-top: 3px;
+        width: 2rem;
+        position: relative;
+        right: 13px;
+    }
+    #gmail{
+        width: 3.5rem;
+        position: relative;
+        right: 31px;
+        top: 3px;
+    }
+    #wapp{
+        width: 2.4rem;
+        position: relative;
+        right: 35px;
+    }
+}
+@media (min-width:652px) and (max-width:667px) {
+    #contact{
+        top: 300rem;
+    }
+    #feedback{
+        top: 300rem;
+    }
+    #feedback p{
+        font-size: 1.0rem;
+    }
+    #feedback a{
+        font-size: 1.0rem;
+    }
+}
+@media (min-width:622px) and (max-width:651px) {
+    #contact{
+        top: 291rem;
+    }
+    #feedback{
+        top: 291rem;
+    }
+    #feedback p{
+        font-size: 1.0rem;
+    }
+    #feedback a{
+        font-size: 1.0rem;
+    }
+}
+@media (min-width:590px) and (max-width:622px) {
+    #contact{
+        top: 281rem;
+    }
+    #feedback{
+        top: 281rem;
+    }
+    #feedback p{
+        font-size: 1.0rem;
+    }
+    #feedback a{
+        font-size: 1.0rem;
+    }
+}
+@media (min-width:559px) and (max-width:590px) {
+    #contact{
+        top: 274rem;
+    }
+    #feedback{
+        top: 274rem;
+    }
+    #feedback p{
+        font-size: 0.8rem;
+    }
+    #feedback a{
+        font-size: 0.8rem;
+    }
+}
+@media (min-width:534px) and (max-width:559px) {
+    #contact{
+        top: 268rem;
+    }
+    #feedback{
+        top: 268rem;
+    }
+    #feedback p{
+        font-size: 0.7rem;
+    }
+    #feedback a{
+        font-size: 0.7rem;
+    }
+    #insta{
+        left: 21px;
+    }
+    #twitter{
+        position: relative;
+        right: 0.7rem;
+    }
+    #linkedin{
+        position: relative;
+        right: 13px;
+    }
+    #gmail{
+        position: relative;
+        right: 26px;
+        top: 3px;
+    }
+    #wapp{
+        position: relative;
+        right: 40px;
+    }
+}
+@media (min-width:500px) and (max-width:534px) {
+    #contact{
+        top: 262rem;
+    }
+    #feedback{
+        top: 262rem;
+    }
+    #feedback p{
+        font-size: 0.6rem;
+    }
+    #feedback a{
+        font-size: 0.6rem;
+    }
+    #insta{
+        left: 15px;
+    }
+    #twitter{
+        position: relative;
+        right: 0.7rem;
+    }
+    #linkedin{
+        position: relative;
+        right: 13px;
+    }
+    #gmail{
+        position: relative;
+        right: 26px;
+        top: 3px;
+    }
+    #wapp{
+        position: relative;
+        right: 40px;
+    }
+    
+}
+@media (min-width:350px) and (max-width:449px) {
+    #navbar{
+        padding: 3px;
+    }
+    #navbar ul li{
+        font-size: 0.5rem;
+        margin-top: 4px;
+    }
+    #navbar ul span{
+        font-size: 0.8rem;
+    }
+    #navbar ul a{
+        padding: 0px 12px;
+    }
+    #container1{
+        top: 29px;
+        height: 22rem;
+        width: 110%;
+    }
+    #container1 h1{
+        font-size: 2rem;
+    }
+    #container2{
+        top: 22rem;
+        height: 19rem;
+    }
+    #container2 h1{
+        font-size: 1.25rem;
+    }
+    #container2 p{
+        font-size: 0.35rem;
+    }
+    #destinations{
+        font-size: 1.45rem;
+        top: 15rem;
+    }
+    .box{
+        top: -12rem;
+    }
+    .box .item{
+        font-size: 0.8rem;    
+    }
+    .box h4{
+        font-size: 1rem;
+    }
+    #contact{
+        top: 334rem;
+    }
+    #feedback{
+        top: 336rem;
+    }
+    #feedback p{
+        font-size: 1.2rem;
+    }
+    #insta{
+        width: 1.5rem;
+        position: relative;
+        top: 6px;
+        left: 26px;
+    }
+    #fb{
+        width: 3.2rem;
+        margin-top: 2px;
+    }
+    #twitter{
+        width: 2rem;
+        margin-top: 6px;
+    }
+    #linkedin{
+        margin-top: 3px;
+        width: 2rem;
+        position: relative;
+        right: 13px;
+    }
+    #gmail{
+        width: 3.5rem;
+        position: relative;
+        right: 31px;
+        top: 3px;
+    }
+    #wapp{
+        width: 2.4rem;
+        position: relative;
+        right: 35px;
+    }
+}
+

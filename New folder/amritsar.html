@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Pacifico&display=swap&family=Ruslan+Display&family=Satisfy&display=swap&family=Yanone+Kaffeesatz:wght@300&display=swap&family=Source+Sans+Pro:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="LogoTransparent.png" type="image/png">
+
+    <script src="https://kit.fontawesome.com/b5d0e07930.js" crossorigin="anonymous"></script>
+    <title>Amritsar</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        :root {
+            --navbar-height: 59px;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        #navbar {
+
+            position: fixed;
+            width: 100%;
+            height: 7%;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.199);
+
+
+        }
+
+        #navbar ul {
+            display: flex;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.2;
+
+
+        }
+
+        #navbar ul li {
+            color: rgb(238, 227, 227);
+            list-style: none;
+            font-size: 1.3rem;
+
+
+
+        }
+
+        #navbar ul li a {
+            color: rgb(238, 227, 227);
+            display: block;
+            padding: 3px 25px;
+            border-radius: 20px;
+            font-family: 'Style Script', cursive;
+            text-decoration: none;
+
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: rgb(238, 227, 227);
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 2px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+            font-size: 24px;
+            color: rgb(238, 227, 227);
+            font-family: 'Dancing Script', cursive;
+
+        }
+
+        #home h3 {
+            position: relative;
+            top: 150px;
+        }
+
+
+
+        #home::before {
+            content: "";
+            background: url(amritsar\ b.jpg)no-repeat center center/cover;
+            position: absolute;
+            height: 115%;
+            width: 100%;
+            z-index: -1;
+            background-position: 0px -50px;
+            /* background-size: contain; */
+
+
+        }
+
+        #home h1 {
+            color: rgb(238, 227, 227);
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            position: relative;
+            top: 150px;
+        }
+
+
+        .h-primary {
+            font-size: 5rem;
+        }
+
+        .section1 {
+            font-family: 'Style Script', cursive;
+            margin: 140px;
+            font-size: 1.2em;
+            position: relative;
+            top: 3rem;
+        }
+
+        #s1 {
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        #s2 {
+            padding: 12px 2px;
+        }
+
+        #grid-heading {
+            font-size: 3rem;
+            width: 75%;
+            margin: 1rem auto;
+            position: relative;
+            top: 1rem;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        span {
+            position: relative;
+            top: 1rem;
+            left: 10.7rem;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        #container2 {
+            display: grid;
+            grid-gap: 1rem;
+            /* border: 2px solid; */
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 1rem;
+            width: 75%;
+            margin: 2rem auto;
+            position: relative;
+            top: 1rem;
+        }
+
+        #container2 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #container2 .box {
+            /* border: 1px solid; */
+            transition: all 0.5s ease-in-out;
+            /* transform: all 1s ease-in-out; */
+            height: 100%;
+        }
+
+        #container2 .box:hover {
+            transform: scale(1.03);
+            box-shadow: -5px 5px 10px 10px rgb(240, 211, 211);
+            ;
+        }
+
+        #container2 .box img {
+            width: 100%;
+        }
+
+        #container2 .box h3 {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5rem;
+            padding: 6px;
+
+        }
+
+        #container2 .box p {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 1rem;
+            padding: 6px;
+        }
+
+        .end {
+            text-align: center;
+
+            padding: 100px 50px;
+
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 80px;
+            font-weight: 600;
+        }
+
+        .footer p {
+            margin-left: 120px;
+            margin-right: 120px;
+            font-weight: normal;
+            font-size: 13px;
+            font-family: 'Poiret One', cursive;
+            margin-bottom: 5px;
+        }
+
+        .icons {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+
+        <ul>
+            <li class="item"><a href="../index.html">TravelWithUs</a></li>
+            <li class="item"><a href="#h">Home</a></li>
+            <li class="item"><a href="#explore">Amritsar</a></li>
+            <li class="item"><a href="#top">Places To Visit</a></li>
+            <li class="item"><a href="#About">About Us</a></li>
+        </ul>
+    </nav>
+    <a name="h"></a>
+    <section id="home">
+
+        <h1 class="h-primary">Welcome to Amritsar</h1>
+        <p>
+        <h3>Top 9 places to visit in Amritsar</h3>
+        </p>
+
+    </section>
+    <a name="explore"></a>
+    <div class="section1">
+        <h1 id="s1">Explore Amritsar</h1>
+        <p id="s2">Amritsar, derives its name from Amrit Sarovar, the holy tank that surrounds the splendid Golden Temple. Guru Ramdas, the fourth Guru of the Sikh faith, founded Amritsar in 1579. He constructed a pool on land gifted by the Mughal Emperor Akbar and called it Amritsar. One of the most pristine cities with Guru-vaani humming from the Gurudwaras, Amritsar is renowned world over for the Golden Temple, also known as Harmandir Sahib Gurudwara - the holiest Gurdwara. It’s at the end of a causeway, surrounded by the sacred Amrit Sarovar tank (lake), where pilgrims bathe. This place is also famous for its Jallianwala Bagh massacre and its proximity to Wagah Border. The Amritsari cuisine is also very famous. The satiating food and generous dollops of legendary Punjabi hospitality further connive to cast a spell upon the visitor. One of the most agriculturally productive cities of India, Amritsar is well connected with most of the important cities of India.</p>
+    </div>
+    <a name="top"></a>
+    <h3 id="grid-heading">Top Sights</h4>
+        <span> (click for web-search) </a></span>
+        <div id="container2">
+            <a href="https://www.google.com/search?q=Sri%20Harmandir%20Sahib&stick=H4sIAAAAAAAAAONgFuLUz9U3MLLMLqhUgjBzzKsKtRSzk630c_KTE0sy8_PgDKvEkpKixGQQsxgAYZfoZzsAAAA&ved=0CB0Q4mhqFwoTCLCimMWegvICFQAAAAAdAAAAABAO&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DSri%252BHarmandir%252BSahib%2526skpm%253D/m/02l7zq%2526t%253Dd"
+                target="_blank">
+                <div class="box" id="box-1">
+                    <img src="../cities\Golden-Temple.jpg" alt="">
+                    <h3>Sri Harmandir Sahib</h3>
+                    <p>Location: Golden Temple Road, Atta Mandi, Katra Ahluwalia</p>
+                    <p>Timings: Open 24 hours; every day </p>
+                    <p>Entry Fee: No entry fee</p>
+
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=ram+tirath+ashram&rlz=1C1CHBF_enIN962IN962&oq=ram+tirath+ashram&aqs=chrome..69i57j46i175i199i512j0i512j0i20i263i512.4342j0j7&sourceid=chrome&ie=UTF-8"
+                target="_blank">
+                <div class="box" id="box-2">
+                    <img src="../cities\Ram-Tirath-Ashram.jpg" alt="">
+                    <h3>Ram Tirath Ashram</h3>
+                    <p>Location: Ram Tirath Road, Kaler</p>
+                    <p>Visit Timings: 05:00 am to 09:00 pm; every day</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwN7NIKTdgtFI1qDC2NLQ0NEpKTjMyTzOxNE2xAgoZmRobmiaaGiUZWiYaJlp68ZQnpidmKCTlF6WkFgEAGqQR0Q&q=wagah+border&oq=waga&aqs=chrome.1.69i57j46i67i175i199j0i67l7j0i271.3520j0j7&sourceid=chrome&ie=UTF-8"
+                target="_blank">
+                <div class="box" id="box-3">
+                    <img src="../cities\Wagah-Border.jpg" alt="">
+                    <h3>Wagah Border</h3>
+                    <p>Location: Wagah, Hardo Rattan</p>
+                    <p>Timings:
+                        04:15 pm to 05:00 pm (For the ceremony during winter)/
+                        05:15 pm to 06:00 pm (For the ceremony during summer)</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?sxsrf=ALeKk016JSpJfd2sQuyZWX6JTJ9UecIMsg:1627355076845&q=gurdwara+tarn+taran+sahib&sa=X&ved=2ahUKEwiTkJ2KooLyAhWUF3IKHd_CBskQ7xYoAHoECAEQMA&biw=1366&bih=625"
+                target="_blank">
+                <div class="box" id="box-4">
+                    <img src="../cities\Tarn-Taran.jpg" alt="">
+                    <h3>Tarn Taran</h3>
+                    <p>Location: Old City, Tarn Taran Sahib</p>
+                    <p>Timings: 05:00 am to 10:00 pm; every day/p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0zC0ztTA1SzY3YLRSNagwtjS0NDO1NEsxT7NMNTE0tTKoSLIwNE42TDM3MDAzs0gySfYSyU0sSVTIScxRSEkty1QoSc0tyEkFAPrOFYw&q=mata+lal+devi+temple&oq=mata+lal+de&aqs=chrome.2.0j0i20i263j46i175i199j0l2j0i20i263j69i57j0l3.5584j0j7&sourceid=chrome&ie=UTF-8"
+                target="_blank">
+                <div class="box" id="box-5">
+                    <img src="../cities\Mata-Lal-Devi-Temple.jpg" alt="">
+                    <h3>Mata Lal Devi Temple</h3>
+                    <p>Location: Model Town, Rani Ka Bagh</p>
+                    <p>Timings: 05:00 am to 11:00 pm; every day</p>
+                    <p>Location: Model Town, Rani Ka Bagh</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=akal+takht&sxsrf=ALeKk01wj0T5ohhPpMh8sAHuQEDova9csA%3A1627355208572&ei=SHj_YKPBIs7erQHD_6jADw&gs_ssp=eJzj4tTP1TcwLylMMTdgtFI1qDC2NLQ0T060TLawSDRKSU6yMqgwSk1NNTUyNbQwSkxLTktO8eJKzE7MUShJzM4oAQAkwRKR&oq=akal+ta&gs_lcp=Cgdnd3Mtd2l6EAMYADIRCC4QsQMQxwEQrwEQkQIQkwIyAggAMgUIABCRAjICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BAgjECc6BAguECc6BAgAEEM6CAgAELEDEIMBOgcIABCHAhAUOggILhCxAxCDAToKCC4QxwEQrwEQQzoFCC4QsQM6BQgAELEDOgcIABDJAxBDOgIILjoNCC4QhwIQxwEQrwEQFDoLCC4QsQMQxwEQrwFKBAhBGABQrhpYmCZg6jFoAHACeACAAYMCiAHpDZIBBTAuMS43mAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz"
+                target="_blank">
+                <div class="box" id="box-6">
+                    <img src="../cities\akal-takht.jpg" alt="">
+                    <h3>Akal Takht</h3>
+                    <p>Location: Golden Temple Road, Atta Mandi, Katra Ahluwalia</p>
+                    <p>Timings: 02:30 am to 10:00 pm; every day</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=durgiana+temple&oq=dur&aqs=chrome.1.69i57j0i67j0i433j46i433j0i131i433j46j0i433j0i131i433j46i433j0.5160j0j7&sourceid=chrome&ie=UTF-8"
+                target="_blank">
+                <div class="box" id="box-7">
+                    <img src="../cities\Durgiana-Temple.jpg" alt="">
+                    <h3>Durgiana Temple</h3>
+                    <p>Location: Hathi Gate, Goal Bagh</p>
+                    <p>Timings: 06:00 am to 10:00 pm; every day</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=gobindgarh+fort%5D&oq=gobindgarh+fort%5D&aqs=chrome..69i57j46i67i131i175i199i433j46i131i433j0i433j46i433j46j46i67j0j46.3358j0j7&sourceid=chrome&ie=UTF-8"
+                target="_blank">
+                <div class="box" id="box-8">
+                    <img src="../cities\Gobindgarh-Fort.jpg" alt="">
+                    <h3>Gobindgarh Fort</h3>
+                    <p>Location: Old Cantt Road, Vijay Chowk, Inside Lohgarh Chowk</p>
+                    <p>Timings: 10:00 am to 10:00 pm; every day</p>
+                    <p>Entry Fee:
+                        ₹ 25 for Indians (Valid up to 5:00 pm only) /
+                        ₹ 100 for Foreigners (Valid up to 5:00 pm)</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LMxLT6vKNUkxYLRSMagwtjS0NE-xTElMTkxKSjYxtzKoME0zMDZKTE02M0w0NU1J9hJLSkxKVEgsScxRKErMVEgvLUopTyxKBACAGxgb&q=baba+atal+rai+gurdwara&oq=baba+atal+rai+g&aqs=chrome.1.69i57j46i175i199j0i22i30l2.13016j1j7&sourceid=chrome&ie=UTF-8"
+                target="_blank">
+                <div class="box" id="box-8">
+                    <img src="../cities\Gurudwara-Baba-Atal-Rai.jpg" alt="">
+                    <h3>Gurudwara Baba Atal Rai</h3>
+                    <p>Location: Golden Temple Complex, Amritsar Cantt.</p>
+                    <p>Timings: 07:00 am to 06:00 pm; every day</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+        </div>
+        <section class="footer">
+
+
+            <a name="About">
+                <h4>About Us</h4>
+            </a>
+            <p>We are a leading online travel company in India providing a 'best in class' customer experience with the goal to be 'India's Travel Planner'. Through our website, www.travelwithus.com, our mobile applications and our other associated platforms, leisure and business travelers can explore, research, compare prices and book a wide range of services catering to their travel needs.</p>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" target="_blank"> <i class="fab fa-instagram"></i></a>
+
+
+            </div>
+        </section>
+</body>
+
+</html>

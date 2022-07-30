@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Feedback Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="icon" href="LogoTransparent.png" type="image/png">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #9b93f5;
+            font-family: 'josefin Sans', Sans-serif;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .radio-inline {
+            margin: 0px 40px 20px 0px;
+            cursor: pointer;
+        }
+
+        label {
+            color: #000;
+        }
+
+        #text {
+            height: 40px;
+            border-radius: 5px;
+            padding-left: 10px;
+            font-size: 14px;
+            border: none;
+            width: 100%;
+            color: #000;
+        }
+
+        #message {
+            outline: none;
+            border: none;
+            padding: 10px 0px 0px 15px;
+            font-size: 16px;
+            color: #000;
+            border-radius: 5px;
+            width: 100%
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="view">
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+
+                <h1 class="text-center mt-5 font-weight-bold">USER REVIEW FORM</h1>
+                <hr class="bg-white">
+                <h6 class="text-center">Please write your feedback below:</h6>
+                <h3 class="mt-4">How do you rate your overall experience?</h3>
+
+                <form>
+                    <label class="radio-inline"><input type="radio" name="experience" value="bad">Bad</label>
+                    <label class="radio-inline"><input type="radio" name="experience" value="bad">Average</label>
+                    <label class="radio-inline"><input type="radio" name="experience" value="bad">Good</label>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <label class="col-md-4">Full Name*<br>
+                <input type="text" id="text" required="" placeholder="Enter Your Name"></label>
+
+            <label class="col-md-4">Email*<br>
+                <input type="text" id="text" required="" placeholder="Enter your Email"></label>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <label class="col-md-4">Age*<br>
+                <input type="number" id="text" required="" placeholder="Enter your age"></label>
+
+            <label class="col-md-4">Phone*<br>
+                <input type="number" id="text" required="" placeholder="Enter your phone number"></label>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <label class="col-md-8">Feedback<br>
+                <textarea id="message" placeholder="Write yor feedback here" cols="48"
+                    rows="5"></textarea></label>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <button class="btn btn-primary" style="width: 44.2%;  margin-left: 11.4%;">Submit</button>
+        </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

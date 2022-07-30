@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Pacifico&display=swap&family=Ruslan+Display&family=Satisfy&display=swap&family=Yanone+Kaffeesatz:wght@300&display=swap&family=Source+Sans+Pro:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="LogoTransparent.png" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b5d0e07930.js" crossorigin="anonymous"></script>
+    <title>Mumbai</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --navbar-height: 59px;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        #navbar {
+
+            position: fixed;
+            width: 100%;
+            height: 7%;
+            z-index: 1;
+
+            background-color: rgba(0, 0, 0, 0.199);
+
+        }
+
+        #navbar ul {
+            display: flex;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.2;
+
+
+        }
+
+        #navbar ul li {
+            color: rgb(238, 227, 227);
+            list-style: none;
+            font-size: 1.3rem;
+
+
+
+        }
+
+        #navbar ul li a {
+            color: rgb(238, 227, 227);
+            display: block;
+            padding: 3px 25px;
+            border-radius: 20px;
+            font-family: 'Style Script', cursive;
+            text-decoration: none;
+
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: rgb(238, 227, 227);
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 2px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+            font-size: 24px;
+            color: rgb(238, 227, 227);
+            font-family: 'Dancing Script', cursive;
+
+        }
+
+
+
+        #home::before {
+            content: "";
+            background: url(mumbaii.jpg)no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+
+
+        }
+
+        #home h1 {
+            color: rgb(238, 227, 227);
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .h-primary {
+            font-size: 5rem;
+        }
+
+        .section1 {
+            font-family: 'Style Script', cursive;
+            margin: 140px;
+        }
+
+        #s1 {
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        #s2 {
+            padding: 12px 2px;
+            font-size: 1.2em;
+        }
+
+        #grid-heading {
+            font-size: 3rem;
+            width: 75%;
+            margin: 2rem auto;
+            position: relative;
+            top: 6rem;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        span {
+            position: relative;
+            top: 4rem;
+            left: 10.7rem;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        #container2 {
+            display: grid;
+            grid-gap: 1rem;
+            /* border: 2px solid; */
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 1rem;
+            width: 75%;
+            margin: 2rem auto;
+            position: relative;
+            top: 3rem;
+        }
+
+        #container2 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #container2 .box {
+            /* border: 1px solid; */
+            transition: all 0.5s ease-in-out;
+            /* transform: all 1s ease-in-out; */
+            height: 100%;
+        }
+
+        #container2 .box:hover {
+            transform: scale(1.03);
+            box-shadow: -5px 5px 10px 10px rgb(240, 211, 211);
+            ;
+        }
+
+        #container2 .box img {
+            width: 100%;
+        }
+
+        #container2 .box h3 {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5rem;
+            padding: 6px;
+
+        }
+
+        #container2 .box p {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 1rem;
+            padding: 6px;
+        }
+
+        .end {
+            text-align: center;
+
+            padding: 100px 50px;
+
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 80px;
+            font-weight: 600;
+        }
+
+        .footer p {
+            margin-left: 120px;
+            margin-right: 120px;
+            font-weight: normal;
+            font-size: 13px;
+            font-family: 'Poiret One', cursive;
+            margin-bottom: 5px;
+        }
+
+        .icons {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+
+        <ul>
+            <li class="item"><a href="../index.html">TravelWithUs</a></li>
+            <li class="item"><a href="#h">Home</a></li>
+            <li class="item"><a href="#explore">Mumbai</a></li>
+            <li class="item"><a href="#top">Places To Visit</a></li>
+            <li class="item"><a href="#About">About Us</a></li>
+        </ul>
+    </nav>
+    <a name="h"></a>
+    <section id="home">
+
+        <h1 class="h-primary">Welcome to Mumbai</h1>
+        <p>
+        <h3>Top 9 places to visit in Mumbai</h3>
+
+        </p>
+
+    </section>
+    <a name="explore"></a>
+    <div class="section1">
+        <h1 id="s1">Explore Mumbai</h1>
+        <p id="s2">Mumbai is a city of contrasts. Arguably India's most cosmopolitan city, it brims with gourmet
+            restaurants, five-star hotels, the fancy living quarters of Bollywood megastars and renowned attractions.
+            But remember: An estimated 20 million people call this bustling metropolis home, giving India's largest city
+            a distinctively chaotic, energized feel.
+
+            It's easy to experience India at its most authentic in Mumbai. You'll see Hindu devotees picking up garlands
+            from the massive flower market near Dadar railway station, "dabbawalas" (translated as people who carry
+            containers) delivering hundreds of thousands of freshly cooked lunches to the city's office workers from
+            Churchgate railway station, the swirling colors of the bustling "Thieves Market," and people of all walks of
+            life enjoying the sunset from the sugary sand at Marine Drive Chowpatty. Mumbai is equal parts overwhelming
+            and inspiring, and you'll never forget your first visit to this city.
+
+            Tourists are spoiled for choice when it comes to things to do in Mumbai. Plan your adventure in this
+            incredible city with our list of the top tourist attractions in Mumbai.</p>
+    </div>
+    <a name="top"></a>
+    <h3 id="grid-heading">Top Sights</h4>
+        <span> (click for web-search) </a></span>
+        <div id="container2">
+            <a href="https://www.google.com/search?q=marine+drive&rlz=1C1CHBF_enIN785IN785&sxsrf=ALeKk03QmUFKy-w2eJYcbConsqUaNihDyg%3A1628078960776&ei=cIMKYa3sLofB3LUPwK6hqAQ&oq=marine+&gs_lcp=Cgdnd3Mtd2l6EAEYATIECCMQJzIHCAAQsQMQQzIECAAQQzIHCC4QsQMQQzIECAAQQzILCAAQgAQQsQMQgwEyBQgAEIAEMgsIABCABBCxAxCDATILCAAQgAQQsQMQgwEyCAgAEIAEELEDOgcIIxCwAxAnOgcIABBHELADOhAILhDHARCvARCwAxDIAxBDOgoILhCwAxDIAxBDOhAILhDHARDRAxCwAxDIAxBDOhAILhCABBCHAhDHARCvARAUOgcIIxDqAhAnOgQILhBDOgoILhDHARCvARBDOgoILhDHARCvARAnOgoIABCxAxCDARBDOgoILhDHARCjAhBDOgUILhCABEoFCDwSATJKBAhBGABQ1-wDWLCTBGC4ngRoA3ACeASAAbMGiAGyI5IBDTAuNS4zLjMuMS4xLjGYAQCgAQGwAQrIAQ_AAQE&sclient=gws-wiz"
+                target="_blank">
+                <div class="box" id="box-1">
+                    <img src="../cities\marine drive.jpg" alt="" height=238.2px>
+                    <h3> Marine Drive</h3>
+                    <p>Location: South Mumbai,near Churchgate</p>
+                    <p>Timings: 24:00hrs; </p>
+                    <p>Entry Fee: No entry fee</p>
+
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=bandra+worli+sea+link+&rlz=1C1CHBF_enIN785IN785&sxsrf=ALeKk005jJjApn3BWRJi1fIGMsJwqGsxfw%3A1628078954217&ei=aoMKYc_TDKu_3LUP7die8Ao&oq=bandra+worli+sea+link+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyBQgAEIAEMgoIABCABBCHAhAUMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIQCC4QgAQQhwIQxwEQrwEQFDIFCAAQgAQ6BwgjELADECc6BwgAEEcQsAM6EAguEMcBEK8BELADEMgDEEM6CgguELADEMgDEEM6EAguEMcBENEDELADEMgDEEM6BggAEBYQHkoFCDwSATFKBAhBGABQthJY6x1gqyJoAXACeACAAf0BiAGtDJIBBTAuNy4ymAEAoAEByAENwAEB&sclient=gws-wiz&ved=0ahUKEwjPsO3dqpfyAhWrH7cAHW2sB64Q4dUDCA4&uact=5"
+                target="_blank">
+                <div class="box" id="box-2">
+                    <img src="../cities\bandra worli sea.jpg" alt="" height=238.2px>
+                    <h3>Bandra-Worli Sea Link</h3>
+                    <p>Location: Kesarinath Buva Bhaye Marg, Koliwada, Worli, Mumbai, </p>
+                    <p>Visit Timings: 24hrs;</p>
+                    <p>Entry Fee: ₹70 - ₹105 per Car
+                        ₹110 - ₹165 per Tempo/LCV
+                        ₹145 - ₹215 per Truck/Bus</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=gateway+of+india+&rlz=1C1CHBF_enIN785IN785&sxsrf=ALeKk036Z3C1XCo5cOpyMEXqHIi2AjBEOA%3A1628079190051&ei=VoQKYcK2At_A3LUP5eGciA4&oq=gateway+of+india+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgsILhCABBDHARCvAToHCCMQsAMQJzoKCAAQRxCwAxDJAzoHCAAQRxCwAzoGCAAQFhAeSgUIPBIBMUoECEEYAFCSI1iFLGDRMGgBcAJ4AoABywGIAfwJkgEFMC43LjGYAQCgAQHIAQnAAQE&sclient=gws-wiz&ved=0ahUKEwjCuafOq5fyAhVfILcAHeUwB-EQ4dUDCA4&uact=5"
+                target="_blank">
+                <div class="box" id="box-3">
+                    <img src="../cities\gateway of india.jpg" ALT="" HEIGHT=238.2PX>
+                    <h3>Gateway Of India</h3>
+                    <p>Location: Apollo Bandar, Colaba, Mumbai</p>
+                    <p>Timings: Mon: 24:00hrs; </p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=kanheri+caves+&rlz=1C1CHBF_enIN785IN785&sxsrf=ALeKk02Gbk3cuXvHa11fD3XW2k__Ey2E8Q%3A1628079503683&ei=j4UKYZabKZbXz7sPgYOnoA4&oq=kanheri+caves+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoHCCMQsAMQJzoHCAAQRxCwAzoKCAAQRxCwAxDJAzoICAAQFhAKEB5KBQg8EgExSgQIQRgAUOcdWMoiYMgoaAFwAngAgAGbAogBsAiSAQUwLjQuMpgBAKABAcgBCcABAQ&sclient=gws-wiz&ved=0ahUKEwjWnu7jrJfyAhWW63MBHYHBCeQQ4dUDCA4&uact=5"
+                target="_blank">
+                <div class="box" id="box-4">
+                    <img src="../cities\kanheri caves.jpg" alt="" height=238.2px>
+                    <h3>Kanheri Caves</h3>
+                    <p>Location: Sanjay Gandhi National Park, Western Express Highway, Borivali East, Mumbai</p>
+                    <p>Timings: 10:30 am - 05:00 pm; every day</p>
+                    <p>Entry Fee: ₹5 per head(Indian Tourists)/₹100 per head(Foreign Tourists</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=global+vipassana+pagoda+&rlz=1C1CHBF_enIN785IN785&sxsrf=ALeKk03ltOD4TSZ5Sd3bGebBowp25bAs7A%3A1628079981366&ei=bYcKYbrpFYu5rQG47pmAAw&oq=global+vipassana+pagoda+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgsILhCABBDHARCvATIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgjELADECc6BwgAEEcQsAM6CggAEEcQsAMQyQM6BggAEBYQHkoFCDwSATFKBAhBGABQxBJY2CJg9SdoAXACeAKAAdYCiAHzEJIBBzAuNS40LjGYAQCgAQHIAQnAAQE&sclient=gws-wiz&ved=0ahUKEwj609HHrpfyAhWLXCsKHTh3BjAQ4dUDCA4&uact=5"
+                target="_blank">
+                <div class="box" id="box-5">
+                    <img src="../cities\global vipassana pagoda.jpg" alt="" height=238.2px>
+                    <h3>Global Vipassana Pagoda</h3>
+                    <p>Location: Global Pagoda Road near Esselworld Gorai, Borivali West, Mumbai</p>
+                    <p>Timings: 6:30 a.m. to 6:30 p.m.; every day</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=shree+siddhivinayak&rlz=1C1CHBF_enIN785IN785&sxsrf=ALeKk01uNC-evAQQBCxvj-hXcMByZdOrPw%3A1628080193315&ei=QYgKYb3qEsf0rAHiy6j4CA&oq=shree+siddhivinayak&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMggIABCABBDJAzIFCAAQgAQyBQgAEIAEMgUIABCABDoHCCMQsAMQJzoKCAAQgAQQhwIQFEoFCDwSATFKBAhBGAFQ3ClYwDBg_TVoAXAAeACAAaQFiAGyD5IBCTAuMS41LjUtMZgBAKABAcgBAcABAQ&sclient=gws-wiz&ved=0ahUKEwj9jtqsr5fyAhVHOisKHeIlCo8Q4dUDCA4&uact=5"
+                target="_blank">
+                <div class="box" id="box-6">
+                    <img src="../cities\shree siddhivinayak.jpg" alt="" height=238.2px>
+                    <h3>Shree Siddhivinayak</h3>
+                    <p>Location: Prabhadevi, ‎Dadar</p>
+                    <p>Timings: 5:30 am to 10:00 pm; every day </p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=nariman+point+&rlz=1C1CHBF_enIN785IN785&sxsrf=ALeKk01UZRHVGJfNwg_m2aMXY8Yx89PdYw%3A1628080884495&ei=9IoKYabQHYy_9QO5vKDoAQ&oq=nariman+point+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBwgjEMkDECcyBQgAEJECMgUILhCRAjIFCAAQgAQyCwguEIAEEMcBEK8BMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECAAQRzoGCAAQFhAeSgUIOhIBMUoECEEYAFD2AliDD2CYGGgAcAN4AYABrwSIAdQPkgEJMC40LjMuNS0xmAEAoAEByAEIwAEB&sclient=gws-wiz&ved=0ahUKEwimmqT2sZfyAhWMX30KHTkeCB0Q4dUDCA4&uact=5"
+                target="_blank">
+                <div class="box" id="box-7">
+                    <img src="../cities\nariman-point.jpg" alt="" height=238.2px>
+                    <h3>Nariman Point</h3>
+                    <p>Location: Southern tip of the Mumbai, at the end of Marine Drive.</p>
+                    <p>Timings: 24:00hrs;</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=elephanta+caves&rlz=1C1CHBF_enIN785IN785&sxsrf=ALeKk02_Z0fm5ebzlH41XlvNFLgaH8HnCA%3A1628081153727&ei=AYwKYePdK7r_z7sP_5CJgA0&oq=elephanta+caves&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAguECcyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIKCAAQgAQQhwIQFDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgcILhCwAxBDSgUIPBIBMUoECEEYAFC7I1ixKmC2NGgBcAJ4AIAB7AKIAcsLkgEHMC4zLjEuMpgBAKABAcgBCsABAQ&sclient=gws-wiz&ved=0ahUKEwij4tT2spfyAhW6_3MBHX9IAtAQ4dUDCA4&uact=5"
+                target="_blank">
+                <div class="box" id="box-8">
+                    <img src="../cities\elephanta caves.jpg" alt="" height=238.2px>
+                    <h3>Elephanta Caves</h3>
+                    <p>Location: Elephanta Island, Gharapuri, Mumbai Harbour, Maharashtra </p>
+                    <p>Timings: 09:30 am and 05:30 pm(Tue-Sun),closed on Mon</p>
+                    <p>Entry Fee: Indian INR 40/
+                        Foreigner INR 600/
+                        (Children Below Age 15) Free
+                    </p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=wankhede+stadium+&rlz=1C1CHBF_enIN785IN785&sxsrf=ALeKk01Ml6u8NyUAWR6t_zhn9euOclujHg%3A1628081746117&ei=Uo4KYcfEBvTdz7sPiPaQoAI&oq=wankhede+stadium+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsAM6CAgAEBYQChAeOgYIABAWEB5KBQg8EgExSgQIQRgAULBGWL5VYKBbaAFwAngAgAHLAogB7w2SAQcwLjkuMC4xmAEAoAEByAEIwAEB&sclient=gws-wiz&ved=0ahUKEwjHtZGRtZfyAhX07nMBHQg7BCQQ4dUDCA4&uact=5"
+                target="_blank">
+                <div class="box" id="box-8">
+                    <img src="../cities\wankhede stadium.jpg" alt="" height=238.2px>
+                    <h3>Wankhede Stadium</h3>
+                    <p>Location: Vinoo Mankad Rd, Churchgate, Mumbai, Maharashtra</p>
+                    <p>Timings: 11:00 am - 08:00 pm;everyday</p>
+                    <p>Entry Fee: 163 INR</p>
+                </div>
+            </a>
+        </div>
+        <section class="footer">
+
+
+            <a name="About">
+                <h4>About Us</h4>
+            </a>
+            <p>We are a leading online travel company in India providing a 'best in class' customer experience with the goal to be 'India's Travel Planner'. Through our website, www.travelwithus.com, our mobile applications and our other associated platforms, leisure and business travelers can explore, research, compare prices and book a wide range of services catering to their travel needs. </p>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" target="_blank"> <i class="fab fa-instagram"></i></a>
+
+
+            </div>
+        </section>
+</body>
+
+</html>

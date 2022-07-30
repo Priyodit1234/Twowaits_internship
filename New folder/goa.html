@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Pacifico&display=swap&family=Ruslan+Display&family=Satisfy&display=swap&family=Yanone+Kaffeesatz:wght@300&display=swap&family=Source+Sans+Pro:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="LogoTransparent.png" type="image/png">
+
+    <script src="https://kit.fontawesome.com/b5d0e07930.js" crossorigin="anonymous"></script>
+    <title>Goa</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --navbar-height: 59px;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        #navbar {
+
+            position: fixed;
+            width: 100%;
+            height: 7%;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.199);
+
+
+        }
+
+        #navbar ul {
+            display: flex;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.2;
+
+
+        }
+
+        #navbar ul li {
+            color: rgb(238, 227, 227);
+            list-style: none;
+            font-size: 1.3rem;
+
+
+
+        }
+
+        #navbar ul li a {
+            color: rgb(238, 227, 227);
+            display: block;
+            padding: 3px 25px;
+            border-radius: 20px;
+            font-family: 'Style Script', cursive;
+            text-decoration: none;
+
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: rgb(238, 227, 227);
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 2px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+            font-size: 24px;
+            color: rgb(238, 227, 227);
+            font-family: 'Dancing Script', cursive;
+
+        }
+
+
+
+        #home::before {
+            content: "";
+            background: url(goaa.jpg)no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+
+
+        }
+
+        #home h1 {
+            color: rgb(238, 227, 227);
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .h-primary {
+            font-size: 5rem;
+        }
+
+        .section1 {
+            font-family: 'Style Script', cursive;
+            margin: 140px;
+        }
+
+        #s1 {
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        #s2 {
+            padding: 12px 2px;
+            font-size: 1.2em;
+        }
+
+        #grid-heading {
+            font-size: 3rem;
+            width: 75%;
+            margin: 2rem auto;
+            position: relative;
+            top: 6rem;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        span {
+            position: relative;
+            top: 4rem;
+            left: 10.7rem;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        #container2 {
+            display: grid;
+            grid-gap: 1rem;
+            /* border: 2px solid; */
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 1rem;
+            width: 75%;
+            margin: 2rem auto;
+            position: relative;
+            top: 3rem;
+        }
+
+        #container2 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #container2 .box {
+            /* border: 1px solid; */
+            transition: all 0.5s ease-in-out;
+            /* transform: all 1s ease-in-out; */
+            height: 100%;
+        }
+
+        #container2 .box:hover {
+            transform: scale(1.03);
+            box-shadow: -5px 5px 10px 10px rgb(240, 211, 211);
+            ;
+        }
+
+        #container2 .box img {
+            width: 100%;
+            height: 56%;
+        }
+
+        #container2 .box h3 {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5rem;
+            padding: 6px;
+
+        }
+
+        #container2 .box p {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 1rem;
+            padding: 6px;
+        }
+
+        .end {
+            text-align: center;
+
+            padding: 100px 50px;
+
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 80px;
+            font-weight: 600;
+        }
+
+        .footer p {
+            margin-left: 120px;
+            margin-right: 120px;
+            font-weight: normal;
+            font-size: 13px;
+            font-family: 'Poiret One', cursive;
+            margin-bottom: 5px;
+        }
+
+        .icons {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+
+        <ul>
+            <li class="item"><a href="../index.html">TravelWithUs</a></li>
+            <li class="item"><a href="#h">Home</a></li>
+            <li class="item"><a href="#explore">Goa</a></li>
+            <li class="item"><a href="#top">Places To Visit</a></li>
+            <li class="item"><a href="#About">About Us</a></li>
+        </ul>
+    </nav>
+    <a name="h"></a>
+    <section id="home">
+
+        <h1 class="h-primary">Welcome to Goa</h1>
+        <p>
+        <h3>Top 9 places to visit in Goa</h3>
+
+        </p>
+
+    </section>
+    <a name="explore"></a>
+    <div class="section1">
+        <h1 id="s1">Explore Goa</h1>
+        <p id="s2">The small coastal state of GOA is home to alluring beaches, bustling nightlife, and amazing food
+            along with a host of tourist attractions and exciting things to do. You can explore the beautiful churches
+            of Old Goa or the exotic spice plantations inland amongst numerous places to visit. South Goa has quiet
+            secluded beaches for those looking for some quiet introspection while Central Goa boasts of some of the
+            trendiest beaches with happening restaurants and cafes. For an added flavour, you can also discover other
+            top places in Goa like the lovely cities like Panaji and Margao at your own pleasure.Goa is one of the most
+            favorite destination among Indian tourists due to its pristine beaches. Dotted with hundreds of impressive
+            beaches in Goa, the incredible coastline of more than 100 km offers beautiful views and serenity where
+            tourists enjoy and relax in the Sun.</p>
+    </div>
+    <a name="top"></a>
+    <h3 id="grid-heading">Top Sights</h4>
+        <span> (click for web-search) </a></span>
+        <div id="container2">
+            <a href="https://www.google.com/search?q=mangeshi+temple&source=lmns&bih=638&biw=1326&rlz=1C1CHBF_enIN785IN785&hl=en&sa=X&ved=2ahUKEwiaiuC-l5LyAhWWkksFHbLsCz4Q_AUoAHoECAEQAA"
+                target="_blank">
+                <div class="box" id="box-1">
+                    <img src="../cities\mangeshi temple.jpg" alt="">
+                    <h3> Shree Mangeshi Temple</h3>
+                    <p>Location: Dinanath Mangeshkar Rd, Mangeshi village,Mardol</p>
+                    <p>Timings: 6:00 am to 10:00 pm; everyday </p>
+                    <p>Entry Fee: No entry fee</p>
+
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=fontainhas&bih=581&biw=1326&rlz=1C1CHBF_enIN785IN785&hl=en&sxsrf=ALeKk031aR1ZbgCrnSt8UdSf-OVzyogiYg%3A1627902279680&ei=R9EHYZzvKOXC3LUP9sC8yAY&oq=fontainhas&gs_lcp=Cgdnd3Mtd2l6EAMyBwgjELADECcyBwgjELADECcyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsANKBQg6EgExSgUIPBIBMUoECEEYAFD0_gJY9P4CYMuCA2gBcAF4AIAB0AKIAdEDkgEHMC4xLjAuMZgBAKABAcgBCsABAQ&sclient=gws-wiz&ved=0ahUKEwjcru_ImJLyAhVlIbcAHXYgD2kQ4dUDCA4&uact=5"
+                target="_blank">
+                <div class="box" id="box-2">
+                    <img src="../cities\fontainhas.jpg" alt="" height=238.2px>
+                    <h3>Fontainhas</h3>
+                    <p>Location: Rua de Natal,Mala,Panaji</p>
+                    <p>Visit Timings: 24hrs;</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=reis+magos+fort&rlz=1C1CHBF_enIN785IN785&oq=reis+magos+fort&aqs=chrome..69i57j46i131i175i199i433i512j0i512j0i457i512j0i512j0i20i263i512j0i512l4.8749j0j9&sourceid=chrome&ie=UTF-8"
+                target="_blank">
+                <div class="box" id="box-3">
+                    <img src="../cities\REIS MAGOS FORT.jpg" ALT="" HEIGHT=238.2PX>
+                    <h3>Reis Magos Fort</h3>
+                    <p>Location: Nerul - Reis Margos Rd, beside three kings church, Bardez, Verem</p>
+                    <p>Timings: Mon: closed ;
+                        Tue-Sun: 9:30am to 5:00pm
+                    </p>
+                    <p>Entry Fee: ₹ 50 per person for adults/
+                        ₹ 10 per person on Sundays and Goa Govt.holidays/
+                        Free entry for children below 8yrs of age</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=our+lady+of+hope+church+goa&rlz=1C1CHBF_enIN785IN785&sxsrf=ALeKk02sGFgNxnpJM5Quh11TO2c7t7tpsA%3A1627904535863&ei=F9oHYeCCNMivyAOsk7DgDA&oq=our+lady+of+hope+church+goa&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBggAEAgQHjoHCAAQRxCwAzoHCCMQsAIQJzoICAAQCBANEB5KBQg8EgExSgQIQRgAUMwbWN0nYJcxaAFwAXgAgAGqAogBggmSAQUwLjIuM5gBAKABAcgBCMABAQ&sclient=gws-wiz&ved=0ahUKEwig6tn8oJLyAhXIF3IKHawJDMwQ4dUDCA4&uact=5"
+                target="_blank">
+                <div class="box" id="box-4">
+                    <img src="../cities\church.jpg" alt="" height=238.2px>
+                    <h3>Our Lady of Hope Church</h3>
+                    <p>Location: GQ9G+5WW,Candolim</p>
+                    <p>Timings: 06:00 am to 6:00pm; every day</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=calangute+beach&rlz=1C1CHBF_enIN785IN785&sxsrf=ALeKk00Dq_S9fhHkjhrYuBM8gEcSJ30_RQ%3A1627904544056&ei=INoHYdvsAsOS9QPSypaQCg&gs_ssp=eJzj4tZP1zcsScuuyjMvNmD04k9OzEnMSy8tSVVISk1MzgAAmE4KNA&oq=Cala&gs_lcp=Cgdnd3Mtd2l6EAEYAzIECCMQJzIECCMQJzIECCMQJzIFCC4QkQIyBAguEEMyBAguEEMyBAguEEMyBAguEEMyBAguEEMyCggAELEDEIMBEAo6BwgjELADECc6BwgAEEcQsAM6BggAEBYQHjoHCCMQ6gIQJzoNCC4QxwEQrwEQ6gIQJzoECAAQQzoLCAAQgAQQsQMQgwE6EQguEIAEELEDEIMBEMcBEKMCOgoILhDHARCvARBDOgcIABDJAxBDOgoIABCxAxCDARBDSgUIPBIBMUoECEEYAFCJiyFYlrMhYN7KIWgCcAJ4BIABoQKIAeIQkgEFMC40LjaYAQCgAQGwAQrIAQnAAQE&sclient=gws-wiz"
+                target="_blank">
+                <div class="box" id="box-5">
+                    <img src="../cities\calangute beach.jpg" alt="" height=238.2px>
+                    <h3>Calangute Beach</h3>
+                    <p>Location: Bardez, North Goa</p>
+                    <p>Timings: 12:00 am to 11:59 pm; every day</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=baga+beach&rlz=1C1CHBF_enIN785IN785&sxsrf=ALeKk02JInQFUtNEf7SDN7RnrRsC0H4Zmg%3A1627905161121&ei=idwHYbzpBtz0juMPl76-oAY&oq=baga+beach&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyCgguELEDEIMBEEMyEQguEIAEELEDEIMBEMcBEK8BMgQIABBDMgUIABCABDIFCAAQgAQyCgguEMcBEK8BEEMyBQgAEIAEMgUIABCABDIFCAAQgAQ6CgguELADECcQkwI6BwgjELADECc6BwgAEEcQsAM6CgguELADEMgDEEM6BwgjELECECc6BggAEAcQHjoKCAAQsQMQgwEQQzoHCAAQsQMQQzoECC4QQzoICAAQBxAKEB5KBQg8EgExSgQIQRgAUJ3FPliu2z5g7-I-aAFwAngAgAGlAogBlw6SAQUwLjkuMZgBAKABAcgBD8ABAQ&sclient=gws-wiz&ved=0ahUKEwj80eymo5LyAhVcumMGHRefD2QQ4dUDCA4&uact=5"
+                target="_blank">
+                <div class="box" id="box-6">
+                    <img src="../cities\baga beach.jpg" alt="" height=238.2px>
+                    <h3>Baga Beach</h3>
+                    <p>Location: Bardez, Goa</p>
+                    <p>Timings: 12:00 am to 11:59 pm; every day </p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=candolim+beach&rlz=1C1CHBF_enIN785IN785&sxsrf=ALeKk03dzIjme4n1nfx0TwYhGW9c7sxZ1A%3A1627906674137&ei=cuIHYY3mB9rn9QPh44jYBg&oq=candolim+beach&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyCwguELEDEIMBEJECMgUIABCABDIKCAAQgAQQhwIQFDIFCAAQgAQyBQgAEIAEMgUIABCABDILCC4QgAQQxwEQrwEyBQgAEIAEMgUIABCABDoECAAQRzoGCAAQBxAeOgoIABCxAxCDARBDOgQIABBDOgQIABANOgcIIxCwAhAnOgoILhCxAxCDARANOgoILhDHARCvARANSgUIOhIBMUoECEEYAFD2DFi6NWC8PGgAcAN4AoAB-ASIAZ0YkgELMC45LjEuMS4xLjGYAQCgAQHIAQjAAQE&sclient=gws-wiz&ved=0ahUKEwiN56f4qJLyAhXac30KHeExAmsQ4dUDCA4&uact=5"
+                target="_blank">
+                <div class="box" id="box-7">
+                    <img src="../cities\candolim beach.jpg" alt="" height=238.2px>
+                    <h3>Candolim Beach</h3>
+                    <p>Location: North Goa along stretch of Aguada Fort, 12,5km from Panaji</p>
+                    <p>Timings: 12:00 am to 11:59 pm; every day</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=lamgau+caves+&rlz=1C1CHBF_enIN785IN785&sxsrf=ALeKk03Nwiz6wvVTV4OgHieemNo9eqxgag%3A1627912869193&ei=pfoHYaqaC7mortoPtM-w8AE&oq=lamgau+caves+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyBAgjECcyBQgAEIAEMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOgcIIxCwAxAnOgcIABBHELADOgoILhDHARCvARANOgYIABANEB5KBQg8EgExSgQIQRgAULCwE1i4vRNglsMTaAFwAngAgAG5AYgB7A2SAQQwLjExmAEAoAEByAEJwAEB&sclient=gws-wiz&ved=0ahUKEwjqgKyCwJLyAhU5lEsFHbQnDB4Q4dUDCA4&uact=5"
+                target="_blank">
+                <div class="box" id="box-8">
+                    <img src="../cities\lamgau caves.jpg" alt="" height=238.2px>
+                    <h3>Lamgau Caves</h3>
+                    <p>Location: lamgao bicholim goa, lamgao, Bicholim, Goa </p>
+                    <p>Timings: 24hrs;</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+            <a href="https://www.google.com/search?q=bom+jesus+basilica+&bih=581&biw=1326&rlz=1C1CHBF_enIN785IN785&hl=en&sxsrf=ALeKk00k8uRtge8XA1P4Yy5Fwwsk-wgLfA%3A1627913703845&ei=5_0HYYKGM5ef9QOau7LIBQ&oq=bom+jesus+basilica+&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyCAgAEIAEEMkDMgsILhCABBDHARCvATIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgjELADECc6BwgAEEcQsAM6DQguEMcBEK8BELADEEM6BggAEBYQHjoICAAQCBANEB5KBQg8EgExSgQIQRgAULItWOs1YKo6aAFwAngAgAG-AYgB0AmSAQMwLjiYAQCgAQHIAQrAAQE&sclient=gws-wiz&ved=0ahUKEwjClauQw5LyAhWXT30KHZqdDFkQ4dUDCA4&uact=5"
+                target="_blank">
+                <div class="box" id="box-8">
+                    <img src="../cities\church2.jpg" alt="" height=238.2px>
+                    <h3>Bom Jesus Basilica</h3>
+                    <p>Location: Old Goa Rd, Bainguinim, Goa</p>
+                    <p>Timings: 09:00 am to 06:30 pm (Mon-Sat); 10:30 am to 06:30 pm (Sun)</p>
+                    <p>Entry Fee: No entry fee</p>
+                </div>
+            </a>
+        </div>
+        <section class="footer">
+
+
+            <a name="About">
+                <h4>About Us</h4>
+            </a>
+            <p>We are a leading online travel company in India providing a 'best in class' customer experience with the goal to be 'India's Travel Planner'. Through our website, www.travelwithus.com, our mobile applications and our other associated platforms, leisure and business travelers can explore, research, compare prices and book a wide range of services catering to their travel needs. </p>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" target="_blank"> <i class="fab fa-instagram"></i></a>
+
+
+            </div>
+        </section>
+</body>
+
+</html>

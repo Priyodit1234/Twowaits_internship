@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Pacifico&display=swap&family=Ruslan+Display&family=Satisfy&display=swap&family=Yanone+Kaffeesatz:wght@300&display=swap&family=Source+Sans+Pro:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="LogoTransparent.png" type="image/png">
+
+    <script src="https://kit.fontawesome.com/b5d0e07930.js" crossorigin="anonymous"></script>
+    <title>Varanasi</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        :root {
+            --navbar-height: 59px;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        #navbar {
+
+            position: fixed;
+            width: 100%;
+            height: 7%;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.199);
+
+
+        }
+
+        #navbar ul {
+            display: flex;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.2;
+
+
+        }
+
+        #navbar ul li {
+            color: rgb(238, 227, 227);
+            list-style: none;
+            font-size: 1.3rem;
+
+
+
+        }
+
+        #navbar ul li a {
+            color: rgb(238, 227, 227);
+            display: block;
+            padding: 3px 25px;
+            border-radius: 20px;
+            font-family: 'Style Script', cursive;
+            text-decoration: none;
+
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: rgb(238, 227, 227);
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 2px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+            font-size: 24px;
+            color: rgb(238, 227, 227);
+            font-family: 'Dancing Script', cursive;
+
+        }
+
+        #home h3 {
+            position: absolute;
+            top: 200px;
+            right: 45px;
+        }
+
+
+
+        #home::before {
+            content: "";
+            background: url(varanasi\ b.webp)no-repeat center center/cover;
+            position: absolute;
+            height: 115%;
+            width: 100%;
+            z-index: -1;
+            background-position: 0px -50px;
+
+
+        }
+
+        #home h1 {
+            color: rgb(238, 227, 227);
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            position: absolute;
+            top: 100px;
+            right: 25px;
+        }
+
+
+        .h-primary {
+            font-size: 5rem;
+        }
+
+        .section1 {
+            font-family: 'Style Script', cursive;
+            margin: 140px;
+            font-size: 1.2em;
+            position: relative;
+            top: 3rem;
+        }
+
+        #s1 {
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        #s2 {
+            padding: 12px 2px;
+        }
+
+        #grid-heading {
+            font-size: 3rem;
+            width: 75%;
+            margin: 1rem auto;
+            position: relative;
+            top: 1rem;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        span {
+            position: relative;
+            top: 1rem;
+            left: 10.7rem;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        #container2 {
+            display: grid;
+            grid-gap: 1rem;
+            /* border: 2px solid; */
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 1rem;
+            width: 75%;
+            margin: 2rem auto;
+            position: relative;
+            top: 1rem;
+        }
+
+        #container2 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #container2 .box {
+            /* border: 1px solid; */
+            transition: all 0.5s ease-in-out;
+            /* transform: all 1s ease-in-out; */
+            height: 100%;
+        }
+
+        #container2 .box:hover {
+            transform: scale(1.03);
+            box-shadow: -5px 5px 10px 10px rgb(240, 211, 211);
+            ;
+        }
+
+        #container2 .box img {
+            width: 100%;
+            height: 250px;
+
+        }
+
+        #container2 .box h3 {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5rem;
+            padding: 6px;
+
+        }
+
+        #container2 .box p {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 1rem;
+            padding: 6px;
+        }
+
+        .end {
+            text-align: center;
+
+            padding: 100px 50px;
+
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 80px;
+            font-weight: 600;
+        }
+
+        .footer p {
+            margin-left: 120px;
+            margin-right: 120px;
+            font-weight: normal;
+            font-size: 13px;
+            font-family: 'Poiret One', cursive;
+            margin-bottom: 5px;
+        }
+
+        .icons {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+
+        <ul>
+            <li class="item"><a href="../index.html">TravelWithUs</a></li>
+            <li class="item"><a href="#h">Home</a></li>
+            <li class="item"><a href="#explore">Varanasi</a></li>
+            <li class="item"><a href="#top">Places To Visit</a></li>
+            <li class="item"><a href="#About">About Us</a></li>
+        </ul>
+    </nav>
+    <a name="h"></a>
+    <section id="home">
+
+        <h1 class="h-primary">Welcome to Varanasi</h1>
+        <p>
+        <h3>Top 9 places to visit in Varanasi</h3>
+        </p>
+
+    </section>
+    <a name="explore"></a>
+    <div class="section1">
+        <h1 id="s1">Explore Varanasi</h1>
+        <p id="s2">Varanasi is a city in the northern Indian state of Uttar Pradesh dating to the 11th century B.C. Regarded as the spiritual capital of India, the city draws Hindu pilgrims who bathe in the Ganges River’s sacred waters and perform funeral rites. Along the city's winding streets are some 2,000 temples, including Kashi Vishwanath, the “Golden Temple,” dedicated to the Hindu god Shiva.Varanasi grew as an important industrial centre famous for its muslin and silk fabrics, perfumes, ivory works, and sculpture.Tulsidas wrote his epic poem on Rama's life called Ram Charit Manas in Varanasi.</p>
+    </div>
+    <a name="top"></a>
+    <h3 id="grid-heading">Top Sights</h4>
+        <span> (click for web-search) </a></span>
+        <div id="container2">
+            <a href="https://www.google.com/search?q=Shri%20Kashi%20Vishwanath%20Temple&stick=H4sIAAAAAAAAAONgFuLUz9U3MMyyNDJSAjPNspNNTbQUs5Ot9HPykxNLMvPz4AyrxJKSosRkELMYABceZDY7AAAA&ved=0CB4Q4mhqGAoTCOC1s6zElPICFQAAAAAdAAAAABCnAQ&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DShri%252BKashi%252BVishwanath%252BTemple%2526skpm%253D/m/06kc54%2526t%253Dd"
+            target="_blank">
+            <div class="box" id="box-1">
+                <img src="../cities\shriKashi.jpg" alt="">
+                <h3>Shri Kashi Vishwanath Temple</h3>
+                <p>Location: Lahori Tola, Varanasi,</p>
+                <p>Timings: Open 24 hours; every day </p>
+                <p>Entry Fee: No entry fee</p>
+
+            </div>
+        </a>
+        <a href="https://www.google.com/search?q=Dashashwamedh%20Ghat&stick=H4sIAAAAAAAAAONgFuLUz9U3MMyyNDJS4gIxzUyrKk2TtRSzk630c_KTE0sy8_PgDKvEkpKixGQQsxgA9dHhnTwAAAA&ved=0CBsQ4mhqGAoTCOC1s6zElPICFQAAAAAdAAAAABCuAQ&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DDashashwamedh%252BGhat%2526skpm%253D/m/065zy5c%2526t%253Dd"
+            target="_blank">
+            <div class="box" id="box-2">
+                <img src="../cities\Ghat.jpg" alt="">
+                <h3>Dashashwamedh Ghat</h3>
+                <p>Location: Dashashwamedh Ghat Rd, Ghats of Varanasi, Godowlia, Varanasi</p>
+                <p>Visit Timings: Open 24 hours; every day</p>
+                <p>Entry Fee: No entry fee</p>
+            </div>
+        </a>
+        <a href="https://www.google.com/search?q=Manikarnika%20Ghat%20-%20Manikarnika%20Mahashamshan%20Ghat&stick=H4sIAAAAAAAAAONgFuLUz9U3MMyyNDJS4gIx001N4s3NtBSzk630c_KTE0sy8_PgDKvEkpKixGQQsxgAj-gnujwAAAA&ved=0CBsQ4mhqGAoTCOC1s6zElPICFQAAAAAdAAAAABC1AQ&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DManikarnika%252BGhat%252B-%252BManikarnika%252BMahashamshan%252BGhat%2526skpm%253D/m/0g54_76%2526t%253Dd"
+            target="_blank">
+            <div class="box" id="box-3">
+                <img src="../cities\manikarnikaGhat.jpg" alt="">
+                <h3>Manikarnika Ghat</h3>
+                <p>Location: near Lalita Ghat, Ghats of Varanasi, Lahori Tola, Varanasi</p>
+                <p>Timings: Open 24 hours; every day</p>
+                <p>Entry Fee: No entry fee</p>
+            </div>
+        </a>
+        <a href="https://www.google.com/search?q=Ramnagar%20Fort&stick=H4sIAAAAAAAAAONgFuLUz9U3MMyyNDJS4gIxk4ri43MLtBSzk630c_KTE0sy8_PgDKvEkpKixGQQsxgABrCUdTwAAAA&ved=0CB4Q4mhqGAoTCOC1s6zElPICFQAAAAAdAAAAABC8AQ&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DRamnagar%252BFort%2526skpm%253D/m/0br__mp%2526t%253Dd"
+            target="_blank">
+            <div class="box" id="box-4">
+                <img src="../cities\ramnagarFort.jpg" alt="">
+                <h3>Ramnagar Fort</h3>
+                <p>Location: Varanasi Rd, Purana, Ramnagar</p>
+                <p>Timings: 10:00 am to 5:00 pm; every day </p>
+                <p>Entry Fee: ₹ 25 for Indians /
+                    ₹ 100 for Foreigners</p>
+            </div>
+        </a>
+        <a href="https://www.google.com/search?q=Assi%20Ghat&stick=H4sIAAAAAAAAAONgFuLUz9U3MMyyNDJS4gIx001NTAoNtRSzk630c_KTE0sy8_PgDKvEkpKixGQQsxgAjhwQ8DwAAAA&ved=0CBsQ4mhqGAoTCOC1s6zElPICFQAAAAAdAAAAABDCAQ&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DAssi%252BGhat%2526skpm%253D/m/0g544q1%2526t%253Dd"
+            target="_blank">
+            <div class="box" id="box-5">
+                <img src="../cities\AssiGhat.jpg" alt="">
+                <h3>Assi Ghat</h3>
+                <p>Location: Nagwa Rd, Assi ghat, Anandbagh, Dumraon Colony, Varanasi, </p>
+                <p>Timings: Open 24 hours; every day</p>
+                <p>Entry Fee: No entry fee</p>
+            </div>
+        </a>
+        <a href="https://www.google.com/search?q=Dhamekh%20Stupa&stick=H4sIAAAAAAAAAONgFuLUz9U3MMyyNDJSAjMzjArSzbUUs5Ot9HPykxNLMvPz4AyrxJKSosRkELMYAJM5XlU7AAAA&ved=0CBsQ4mhqFwoTCIj6kJXLlPICFQAAAAAdAAAAABAR&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DDhamekh%252BStupa%2526skpm%253D/m/0h2pg7%2526t%253Dd"
+            target="_blank">
+            <div class="box" id="box-6">
+                <img src="../cities\DhamekhStupa.jpg" alt="">
+                <h3>Dhamekh Stupa</h3>
+                <p>Location:  Dharmapala Rd, Singhpur, Sarnath, Varanasi, Uttar Pradesh</p>
+                <p>Timings: 06:00 am to 5:00 pm; every day</p>
+                <p>Entry Fee: ₹ 20 for Indians /
+                    ₹ 100 for Foreigners</p>
+            </div>
+        </a>
+        <a href="https://www.google.com/search?q=Gangaa%20Aarti&stick=H4sIAAAAAAAAAONgFuLUz9U3MMyyNDJS4tVP1zc0TLe0KC8oL0nXUsxOttLPyU9OLMnMz4MzrBJLSooSk0HMYgD6As_KPwAAAA&ved=0CBoQ4mhqFwoTCIj6kJXLlPICFQAAAAAdAAAAABAa&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DGangaa%252BAarti%2526skpm%253D/g/11g98wpwtg%2526t%253Dd"
+            target="_blank">
+            <div class="box" id="box-7">
+                <img src="../cities\GangaaAarti.jpg" alt="">
+                <h3>Gangaa Aarti</h3>
+                <p>Location: B1/148 B- WARD, 0008, Assi Rd, Varanasi</p>
+                <p>Timings: Open 24 hours; every day</p>
+                <p>Entry Fee: No entry fee</p>
+            </div>
+        </a>
+        <a href="https://www.google.com/search?q=Kashi%20Kalash%20Foundation&stick=H4sIAAAAAAAAAONgFuLUz9U3MMyyNDJSAjOTyjPyLLUUs5Ot9HPykxNLMvPz4AyrxJKSosRkELMYAP_wNiw7AAAA&ved=0CB4Q4mhqFwoTCIj6kJXLlPICFQAAAAAdAAAAABAi&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DKashi%252BKalash%252BFoundation%2526skpm%253D/m/0bwhn9%2526t%253Dd"
+            target="_blank">
+            <div class="box" id="box-8">
+                <img src="../cities\Kashi.jpg" alt="">
+                <h3>Kashi Kalash Foundation</h3>
+                <p>Location: Bhogabeer Colony, behind Sankat Mochan Mandir, Varanasi </p>
+                <p>Timings: 10:00 am to 7:00 pm; Mon-Sat</p>
+                <p>Entry Fee: No entry fee</p>
+            </div>
+        </a>
+        <a href="https://www.google.com/search?q=Shri%20Durga%20Temple&stick=H4sIAAAAAAAAAONgFuLUz9U3MMyyNDJS4gYzjarMyorjtRSzk630c_KTE0sy8_PgDKvEkpKixGQQsxgAhNLZ0j0AAAA&ved=0CB4Q4mhqGAoTCIj6kJXLlPICFQAAAAAdAAAAABCQAQ&hl=en-IN&gl=in#fpstate=trskp&trifp=kpq%253DShri%252BDurga%252BTemple%2526skpm%253D/m/012z6vs_%2526t%253Dd"
+            target="_blank">
+            <div class="box" id="box-9">
+                <img src="../cities\shriDurgaTemple.jpg" alt="">
+                <h3>Shri Durga Temple</h3>
+                <p>Location: Durgakund Rd, Durgakund, Anandbagh, Bhelupur, Varanasi</p>
+                <p>Timings: 05:00 am to 11:00 pm; every day</p>
+                <p>Entry Fee: No entry fee</p>
+            </div>
+        </a>
+                </div>
+            </a>
+                </div>
+            </a>
+        </div>
+        <section class="footer">
+
+
+            <a name="About">
+                <h4>About Us</h4>
+            </a>
+            <p>We are a leading online travel company in India providing a 'best in class' customer experience with the goal to be 'India's Travel Planner'. Through our website, www.travelwithus.com, our mobile applications and our other associated platforms, leisure and business travelers can explore, research, compare prices and book a wide range of services catering to their travel needs.</p>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" target="_blank"> <i class="fab fa-instagram"></i></a>
+
+
+            </div>
+        </section>
+</body>
+
+</html>
